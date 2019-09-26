@@ -97,7 +97,7 @@
 					<table class="table">
 					  <thead class="grey lighten-2">
 						<tr>
-						  <th scope="col">Periodo</th>
+						  <th scope="col" class="text-center">Cuota</th>
 						  <th scope="col">Matrícula</th>
 						  <th scope="col">Interés de Financiación</th>
 						  <th scope="col">Saldo Capital</th>
@@ -359,7 +359,7 @@
 			
 			for(var i = 0; i < resultData.length; i++) 
 			{
-				strTR = "<tr><th scope='row'>" + (i + 1).toString() + "</th><td>$ " + resultData[i].Matricula.format(0, 3, '.', ',') + "</td><td>$ " + resultData[i].Interes.format(0, 3, '.', ',') + "</td><td>$ " + resultData[i].Saldo.format(0, 3, '.', ',') + "</td><td>$ " + resultData[i].Pago.format(0, 3, '.', ',') + "</td><td>" + resultData[i].Fecha + "</td></tr>";
+				strTR = "<tr><th scope='row' class='text-center'>" + (i + 1).toString() + "</th><td>$ " + resultData[i].Matricula.format(0, 3, '.', ',') + "</td><td>$ " + resultData[i].Interes.format(0, 3, '.', ',') + "</td><td>$ " + resultData[i].Saldo.format(0, 3, '.', ',') + "</td><td><b>$ " + resultData[i].Pago.format(0, 3, '.', ',') + "</b></td><td>" + resultData[i].Fecha + "</td></tr>";
 				$("#tbodResult").append(strTR);
 			}
 		}
